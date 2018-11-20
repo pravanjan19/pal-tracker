@@ -1,6 +1,8 @@
 package io.pivotal.pal.tracker;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class InMemoryTimeEntryRepository implements TimeEntryRepository {
 
@@ -45,6 +47,12 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
         return updatedEntry;
 
     }
+
+
+  public List<TimeEntry> list() {
+        return new ArrayList<>(entries.values());
+    }
+
 
 @Override
   public void delete(Long id){
