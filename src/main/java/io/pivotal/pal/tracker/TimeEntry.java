@@ -68,6 +68,14 @@ public class TimeEntry {
     }
 
 
+    public int getHours() {
+        return hours;
+    }
+
+    public void setHours(int hours) {
+        this.hours = hours;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
