@@ -9,7 +9,7 @@ import java.sql.Time;
 import java.util.List;
 
 @RestController
-@RequestMapping("/entries")
+@RequestMapping("/time-entries")
 public class TimeEntryController {
 
     private TimeEntryRepository timeEntryRepository;
