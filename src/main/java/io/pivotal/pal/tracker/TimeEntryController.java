@@ -31,7 +31,7 @@ public class TimeEntryController {
 
         TimeEntry timeEntry = timeEntryRepository.find(id);
 
-        if (timeEntry == null) {
+        if (timeEntry != null) {
             return new ResponseEntity<>(timeEntry, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
